@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find chemically identical generic medicines at lower prices. Search by brand name and compare Jan Aushadhi alternatives.">
+    <title>Salt-Mine | Generic Medicine Mapper India</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <main class="shell">
+        <section class="hero">
+            <p class="badge">💊 Salt-Mine: Generic Medicine Mapper</p>
+            <h1>Find Affordable Generic Alternatives</h1>
+            <p class="subtitle">
+                Search your prescribed medicine and instantly discover chemically identical generics, including Jan Aushadhi options, with real-time savings calculations.
+            </p>
+        </section>
+
+        <section class="card search-card">
+            <label for="brandInput">Search Prescribed Brand Name</label>
+            <div class="search-row">
+                <div class="input-wrap">
+                    <input 
+                        id="brandInput" 
+                        type="text" 
+                        placeholder="e.g. Augmentin 625, Crocin Advance 500, Cetirizine"
+                        autocomplete="off"
+                    >
+                    <div id="suggestBox" class="suggest-box hidden"></div>
+                </div>
+                <button id="searchBtn">Search</button>
+            </div>
+            <p class="hint">Start typing any medicine name to see suggestions from 100+ brands.</p>
+        </section>
+
+        <section id="statusArea" class="status" aria-live="polite" role="status"></section>
+
+        <section id="resultArea" class="result-grid hidden">
+            <article class="card prescribed-card">
+                <h2>📋 Prescribed Medicine</h2>
+                <div id="prescribedMeta"></div>
+                <h3>Active Composition</h3>
+                <ul id="compositionList"></ul>
+            </article>
+
+            <article class="card">
+                <h2>🔄 Equivalent Alternatives</h2>
+                <p style="color: #64748b; margin-bottom: 1rem; font-size: 0.9rem;">
+                    All options below contain the same active ingredients in identical strengths:
+                </p>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Brand Name</th>
+                                <th>Manufacturer</th>
+                                <th>Price (₹)</th>
+                                <th>Savings</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody id="alternativesBody"></tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+1|Paracetamol
+2|Ibuprofen
+3|Aspirin
+4|Cetirizine Hydrochloride
+5|Loratadine
+6|Amoxicillin
+7|Clavulanic Acid
+8|Cephalexin
+9|Ciprofloxacin
+10|Azithromycin
+11|Metformin Hydrochloride
+12|Glimepiride
+13|Teneligliptin
+14|Linagliptin
+15|Voglibose
+16|Amlodipine
+17|Lisinopril
+18|Atenolol
+19|Rosuvastatin
+20|Atorvastatin
+21|Omeprazole
+22|Pantoprazole
+23|Ranitidine
+24|Domperidone
+25|Metoclopramide
+26|Ambroxol Hydrochloride
+27|Dextromethorphan Hydrobromide
+28|Guaifenesin
+29|Salbutamol
+30|Terbutaline
+31|Diphenhydramine
+32|Promethazine
+33|Chlorpheniramine
+34|Desloratadine
+35|Fexofenadine
+36|Mebendazole
+37|Albendazole
+38|Praziquantel
+39|Pyrantel Pamoate
+40|Levamisole
+41|Metronidazole
+42|Tinidazole
+43|Secnidazole
+44|Ornidazole
+45|Furazolidone
+46|Levofloxacin
+47|Ofloxacin
+48|Moxifloxacin
+49|Norfloxacin
+50|Gatifloxacin
